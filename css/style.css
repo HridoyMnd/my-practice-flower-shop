@@ -8,9 +8,6 @@
     box-sizing:border-box;
     font-family:'Lato', sans-serif
 }
-img{
-    max-width: 100%;
-}
 /* basic typography setup end*/
 /* component section design start */
 
@@ -41,7 +38,8 @@ h2{
     line-height: 34px;
 }
 :root{
-    /* ---div-border:1px solid red; */
+    /* ---div2-border:1px solid #000;
+    ---div-border:1px solid red; */
     ---heading-color:rgb(39, 39, 39);
     ---paragraph-color:rgba(39, 39, 39, 0.6);
     ---btn-back:rgb(229, 84, 115);
@@ -63,7 +61,7 @@ h2{
     .hero-left{
         border:var(---div-border);
         width: 450px;
-        height: 400px;
+        height: 450px;
     }
     .hero-left h1{
         color:var(---heading-color);
@@ -80,6 +78,64 @@ h2{
         width: 450px;
         height: 550px;
     }
+    .hero-right img{
+        width: 450px;
+        height: 550px;
+    }
     
 /* hero section design end */
 /* header section design end */
+/* main section disign start */
+/* featured section design start */
+.featured-section{
+    border:var(---div-border);
+    width: 1120px;
+    height: 550px;
+    margin:100px auto;
+}
+.featured-section header{
+    border:var(---div-border);
+    margin:0 auto;
+    text-align: center;
+    width: 450px;
+    
+}
+.featured-section footer{
+    border:var(---div2-border);
+    height: 465px;
+    width: 1120px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap:20px;
+}
+.featured-section footer .img-container{
+    border: var(---div-border);
+    width: 400px;
+    height: 420px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 230px 230px 0 0;
+
+}
+.featured-section footer .img-container:nth-child(2){
+    background: rgba(5, 151, 160, 0.15);
+}
+.featured-section footer .img-container:nth-child(1){
+    background: rgba(167, 33, 98, 0.15);
+}
+.featured-section footer .img-container:nth-child(3){
+    background: rgba(71, 125, 17, 0.15);
+}
+.featured-section footer .img-container .image{
+    border: var(---div2-border);
+    width: 280px;
+    height: 370px;
+}
+.image img{
+    max-width: 280px;
+    height: 370px;
+}
+/* featured section design end */
+/* main section disign end */
