@@ -38,8 +38,8 @@ h2{
     line-height: 34px;
 }
 :root{
-    /* ---div2-border:1px solid #000;
-    ---div-border:1px solid red; */
+    ---div2-border:1px solid #000;
+    ---div-border:1px solid red;
     ---heading-color:rgb(39, 39, 39);
     ---paragraph-color:rgba(39, 39, 39, 0.6);
     ---btn-back:rgb(229, 84, 115);
@@ -138,4 +138,28 @@ h2{
     height: 370px;
 }
 /* featured section design end */
+/* support section design start */
+.support-section{
+    border: var(---div-border);
+    width: 1120px;
+    height:300px;
+    margin:60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(39, 39, 39, 0.05);
+}
+.support-section .container{
+    border: var(---div2-border);
+    width: 300px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(39, 39, 39, 0.8);
+}
+/* support section design end */
+
 /* main section disign end */
