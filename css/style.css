@@ -27,7 +27,7 @@ button{
 }
 p{
     color:var(---paragraph-color);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
 }
@@ -38,8 +38,8 @@ h2{
     line-height: 34px;
 }
 :root{
-    ---div2-border:1px solid #000;
-    ---div-border:1px solid red;
+    /* ---div2-border:1px solid #000;
+    ---div-border:1px solid red; */
     ---heading-color:rgb(39, 39, 39);
     ---paragraph-color:rgba(39, 39, 39, 0.6);
     ---btn-back:rgb(229, 84, 115);
@@ -49,8 +49,8 @@ h2{
 /* hero section design start */
     .hero-section{
         border:var(---div-border);
-        width: 1366px;
-        height: 580px;
+        max-width: 1300px;
+        /* height: 580px; */
         margin:0 auto;
         display: flex;
         align-items: center;
@@ -60,8 +60,8 @@ h2{
     }
     .hero-left{
         border:var(---div-border);
-        width: 450px;
-        height: 450px;
+        max-width: 450px;
+        /* height: 450px; */
     }
     .hero-left h1{
         color:var(---heading-color);
@@ -75,11 +75,11 @@ h2{
     }
     .hero-right{
         border:var(---div-border);
-        width: 450px;
-        height: 550px;
+        max-width: 450px;
+        /* height: 550px; */
     }
     .hero-right img{
-        width: 450px;
+        max-width: 450px;
         height: 550px;
     }
     
@@ -89,30 +89,31 @@ h2{
 /* featured section design start */
 .featured-section{
     border:var(---div-border);
-    width: 1120px;
-    height: 550px;
+    max-width: 1120px;
+    /* height: 550px; */
     margin:100px auto;
 }
 .featured-section header{
     border:var(---div-border);
-    margin:0 auto;
+    margin:0 auto 60px;
     text-align: center;
-    width: 450px;
+    max-width: 450px;
     
 }
 .featured-section footer{
     border:var(---div2-border);
-    height: 465px;
-    width: 1120px;
+    /* height: 465px; */
+    max-width: 1120px;
     display: flex;
+    /* flex-direction: column; */
     align-items: end;
     justify-content: center;
     gap:20px;
 }
 .featured-section footer .img-container{
     border: var(---div-border);
-    width: 400px;
-    height: 420px;
+    max-width: 400px;
+    /* height: 420px; */
     display: flex;
     align-items: end;
     justify-content: center;
@@ -130,19 +131,19 @@ h2{
 }
 .featured-section footer .img-container .image{
     border: var(---div2-border);
-    width: 280px;
-    height: 370px;
+    max-width: 280px;
+    /* height: 370px; */
 }
 .image img{
-    max-width: 280px;
-    height: 370px;
+    max-width:100%;
+    height: 270px;
 }
 /* featured section design end */
 /* support section design start */
 .support-section{
     border: var(---div-border);
-    width: 1120px;
-    height:300px;
+    max-width: 1120px;
+    /* height:300px; */
     margin:60px auto;
     display: flex;
     align-items: center;
@@ -153,13 +154,15 @@ h2{
 .support-section .container{
     border: var(---div2-border);
     width: 300px;
-    height: 280px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: rgba(39, 39, 39, 0.8);
+    text-align: center;
 }
-/* support section design end */
+.support-section .container img{
+    max-width: 100%;
 
-/* main section disign end */
+}
